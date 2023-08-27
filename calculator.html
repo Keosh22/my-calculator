@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles/style-calculator.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="grid-container">
+        <div class="input-container">
+          <p class="js-input calculation-result"></p>
+        </div>
+        <div class="calculator-button-container">
+          <div>
+            <button class="calculator-button" onclick="updateValue('1')">
+              1
+            </button>
+          </div>
+          <div>
+            <button class="calculator-button" onclick="updateValue('2')">
+              2
+            </button>
+          </div>
+          <div>
+            <button class="calculator-button" onclick="updateValue('3')">
+              3
+            </button>
+          </div>
+          <div><button class="side-button calculator-button" onclick="updateValue('&#43')">
+            &#43
+          </button>
+        </div>
+          <div><button class="calculator-button" 
+            onclick="updateValue('4')">
+            4
+          </button>
+        </div>
+          <div><button class="calculator-button" 
+            onclick="updateValue('5')">
+            5
+          </button>
+        </div>
+          <div><button class="calculator-button" 
+            onclick="updateValue('6')">
+            6
+          </button>
+        </div>
+          <div><button class="side-button calculator-button" onclick="updateValue('&#8722')">
+            &#8722
+          </button>
+        </div>
+          <div><button class="calculator-button" 
+            onclick="updateValue('7')">
+            7
+          </button>
+        </div>
+          <div><button class="calculator-button" 
+            onclick="updateValue('8')">
+            8
+          </button>
+        </div>
+          <div><button class="calculator-button" 
+            onclick="updateValue('9')">
+            9
+          </button>
+        </div>
+          <div><button class="side-button calculator-button" onclick="updateValue('*')">
+            *
+          </button>
+        </div>
+          <div><button class="calculator-button"
+            onclick="updateValue('0')">
+            0
+          </button>
+        </div>
+          <div><button class="calculator-button" 
+            onclick="updateValue('.')">
+            .
+          </button>
+        </div>
+          <div><button class="calculator-button"
+            onclick="
+            calculation = eval(calculation);
+
+            displayValue();
+
+            localStorage.setItem('calculation', calculation);
+            ">
+            &#61
+          </button>
+        </div>
+          <div><button class="side-button" onclick="updateValue('/')" >
+            /
+          </button>
+        </div>
+          <div><button class="clear-button-text" 
+            onclick="
+            calculation = '';
+            displayValue();
+            localStorage.setItem('calculation', calculation);
+            ">
+            Clear
+          </button>
+        </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="/script/script-calculator.js"></script>
+  </body>
+</html>
